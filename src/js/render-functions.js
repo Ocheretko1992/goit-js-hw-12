@@ -6,7 +6,7 @@ const galleryList = document.querySelector(".gallery");
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',});
 
-export function renderImages(data) {
+export async function renderImages(data) {
 
     const galleryMarkup = data.map(({largeImageURL,webformatURL,tags,likes,views,comments,downloads}) => {
       
