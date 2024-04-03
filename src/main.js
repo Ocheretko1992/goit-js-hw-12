@@ -34,6 +34,8 @@ async function validInput(event){
 
   galleryList.innerHTML = "";
 
+page = 1
+
   query = event.target.elements.search.value.trim();
 
   showLoader();
@@ -133,7 +135,6 @@ async function clickRequest() {
               })
   }
 
-  
   scroll();
   infoBtnLoadMore();
   hideLoader();
